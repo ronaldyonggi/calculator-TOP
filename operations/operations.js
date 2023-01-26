@@ -17,3 +17,11 @@ function divide(a, b) {
 function operate(operator, a, b) {
   return operator(a, b);
 }
+
+module.exports = {
+  add, 
+  subtract,
+  multiply,
+  divide,
+  operate
+}
