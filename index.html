@@ -6,29 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
   <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+  <script src="script.js" type="module" defer></script>
 </head>
 <body>
   <div id="container">
-    <div id="display">0</div>
+    <div id="display">
+
+      <div id="number-display">0</div>
+      <div id="operator-display">x</div>
+
+    </div>
     <div id="clear">CLEAR</div>
     <div id="backspace">BACKSPACE</div>
-    <div id="seven" class="normal">7</div>
-    <div id="eight" class="normal">8</div>
-    <div id="nine" class="normal">9</div>
-    <div id="divide" class="normal">&#247;</div>
-    <div id="four" class="normal">4</div>
-    <div id="five" class="normal">5</div>
-    <div id="six" class="normal">6</div>
-    <div id="multiply" class="normal">&#215;</div>
-    <div id="one" class="normal">1</div>
-    <div id="two" class="normal">2</div>
-    <div id="three" class="normal">3</div>
-    <div id="substract" class="normal">-</div>
+    <div id="seven" class="numbers normal">7</div>
+    <div id="eight" class="numbers normal">8</div>
+    <div id="nine" class="numbers normal">9</div>
+    <div id="divide" class="operators normal">&#247;</div>
+    <div id="four" class="numbers normal">4</div>
+    <div id="five" class="numbers normal">5</div>
+    <div id="six" class="numbers normal">6</div>
+    <div id="multiply" class="operators normal">&#215;</div>
+    <div id="one" class="numbers normal">1</div>
+    <div id="two" class="numbers normal">2</div>
+    <div id="three" class="numbers normal">3</div>
+    <div id="subtract" class="operators normal">-</div>
     <div id="dot" class="normal">.</div>
-    <div id="zero" class="normal">0</div>
+    <div id="zero" class="numbers normal">0</div>
     <div id="equal" class="normal">=</div>
-    <div id="add" class="normal">+</div>
+    <div id="add" class="operators normal">+</div>
   </div>
 </body>
 </html>
