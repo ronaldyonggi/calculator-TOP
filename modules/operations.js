@@ -18,10 +18,10 @@ function operate(operator, a, b) {
   return operator(a, b);
 }
 
-module.exports = {
+export {
   add, 
   subtract,
   multiply,
   divide,
   operate
-}
+};
