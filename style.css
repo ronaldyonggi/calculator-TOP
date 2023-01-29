@@ -6,7 +6,7 @@
   "clear clear backspace backspace"
   "seven eight nine divide"
   "four five six multiply"
-  "one two three substract"
+  "one two three subtract"
   "dot zero equal add"
   ;
   background-color: gray;
@@ -26,6 +26,7 @@
   grid-area: display;
   background-color: lightgrey;
   display: flex;
+  flex-direction: column;
   justify-content: flex-end;
   text-align: end;
   padding: 10px;
@@ -92,8 +93,8 @@
   grid-area: three;
 }
 
-#substract {
-  grid-area: substract;
+#subtract {
+  grid-area: subtract;
 }
 
 #dot {
