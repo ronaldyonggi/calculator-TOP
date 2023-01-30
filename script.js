@@ -136,18 +136,35 @@ dot.addEventListener('click', () => {
   if (currentOperator) {
     // Only take action if the string doesn't contain any dot
     if (!second.includes('.')) {
-      // If second starts as empty, adding a dot means '0.'
+      // If second starts as empty, adding a dot means display becomes '0.'
       if (!second) second = '0.';
-      // Otherwise it's
-      else second += 
+      // Otherwise append '.' to second
+      else second += '.'
+
+      updateNumberDisplay(second);
     }
   } 
   // Otherwise add to first
   else {
-    if (!first.includes('.')) {
-      first += '.'
+
+    // If fresh starting from equal sign, replace as '0.
+    if (equalPressed) {
+      equalPressed = false;
+      first = '0.';
       updateNumberDisplay(first);
     }
-    
+    // Otherwise
+    else {
+      // Only take action if string doesn't contain any dot
+      if (!first.includes('.')) {
+        // If first starts as empty, adding a dot means display becomes '0.'
+        if (!first) first = '0.';
+        // Otherwise append '.' to first
+        else first += '.'
+
+        updateNumberDisplay(first)
+      }
+    }
+
   }
 })
