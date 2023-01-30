@@ -114,10 +114,25 @@
 }
 
 .normal {
-  background-color: lightgray;
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.numbers {
+  background-color: lightgray;
+}
+
+.operators {
+  background-color: beige;
+}
+
+#equal {
+  background-color: aqua;
+}
+
+#dot {
+  background-color: aliceblue;
 }
 
 #display, #clear, #backspace, .normal {
